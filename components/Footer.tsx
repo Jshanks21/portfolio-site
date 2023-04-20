@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className='underline underline-offset-2 cursor-not-allowed'>
             <div className='has-tooltip'>
-              <span className='tooltip rounded shadow-lg p-1 bg-dark text-light -mt-10'>Site Coming Soon!</span>
+              <span className='tooltip rounded shadow-lg p-1 bg-dark text-light -mt-10'>Coming to an SERP near you!</span>
               Alpha Innovations
             </div>
           </div>
