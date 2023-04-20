@@ -5,6 +5,9 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import profilePic from '@/public/images/profile/cropped_profile.jpg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 
 const AnimatedNumbers = ({ value }: { value: number }) => {
@@ -104,6 +107,10 @@ const about = () => {
             </div>
 
           </div>
+
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
 
