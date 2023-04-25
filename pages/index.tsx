@@ -6,11 +6,16 @@ import Link from 'next/link'
 import { LinkArrow, PolygonIcon, EthLogo, OptimismLogo } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import arbLogo from '@/public/images/chains/arbitrum-logo.png'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <>
-      <main className='flex items-center w-full text-dark min-h-screen'>
+      <Head>
+        <title>Alpha Innovations | Home</title>
+        <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
+      </Head>
+      <main className='flex items-center w-full text-dark min-h-screen dark:text-light'>
         <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
             <div className='w-1/2'>
@@ -25,7 +30,7 @@ export default function Home() {
                 <Link
                   href='/dummy.pdf'
                   target='_blank'
-                  className='flex items-center justify-center p-6 py-2 mr-4 text-lg font-medium text-light bg-dark rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  className='flex items-center justify-center p-6 py-2 mr-4 text-lg font-medium text-light bg-dark rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
                   download={true}
                 >
                   Resume
@@ -34,10 +39,10 @@ export default function Home() {
                 <Link
                   href='mailto:alphasearchseo@gmail.com'
                   target='_blank'
-                  className='ml-4 text-lg font-medium text-dark underline'
+                  className='ml-4 text-lg font-medium text-dark underline dark:text-light'
                 >
                   Contact
-                </Link>                
+                </Link>
               </div>
             </div>
           </div>
@@ -45,11 +50,11 @@ export default function Home() {
 
         <HireMe />
         <div className='absolute right-8 bottom-8 flex justify-between space-x-32'>
-          <EthLogo className='!w-24' />          
+          <EthLogo className='!w-24' />
           <PolygonIcon className='!w-24' />
           <OptimismLogo className='!w-24' />
           <Image src={arbLogo} alt="Arbitrum logo" className='!w-24' />
-        </div>        
+        </div>
       </main>
     </>
   )

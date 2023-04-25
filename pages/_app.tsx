@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Next.js + Tailwind CSS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen text-xl`}>
+      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen text-xl`}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
