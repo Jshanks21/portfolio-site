@@ -28,5 +28,8 @@ module.exports = {
       }
     },
   },
+  screens: {
+    xs: '480px',
+  },
   plugins: [],
 }
