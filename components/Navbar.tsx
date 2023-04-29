@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
+    <header className='w-full mb-2 px-8 lg:px-12 xl:px-16 2xl:px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
 
       {/* Responsive Hamburger Menu */}
       <button onClick={handleClick} className='lg:hidden flex flex-col justify-center items-center'>

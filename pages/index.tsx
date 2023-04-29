@@ -16,27 +16,29 @@ export default function Home() {
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
       <main className='flex items-center w-full text-dark min-h-screen dark:text-light'>
-        <Layout className='pt-0'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='w-1/2'>
+
+        <Layout className='pt-8 xl:pt-0'>
+          <div className='flex items-center justify-between w-full flex-col lg:flex-row'>
+
+            <div className='w-full lg:w-1/2 xl:mr-16'>
               <Image
                 src={heroPic}
                 alt="Alpha Innovations"
-                className='rounded-[20%]' 
+                className='w-full h-auto rounded-[20%] md:hidden lg:block' 
                 priority
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl !text-left' />
-              <p className='my-4 text-base font-medium'>
+            <div className='w-full flex flex-col items-center self-center text-center lg:w-1/2 '>
+              <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-3xl !text-center sm:!text-4xl md:!text-5xl lg:!text-6xl lg:!text-left xl:!text-5xl 2xl:!text-6xl' />
+              <p className='my-4 text-sm lg:text-xl font-medium lg:text-left'>
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
-              <div className='flex items-center self-start mt-2'>
+              <div className='flex items-center mt-2 self-center lg:self-start'>
                 <Link
                   href='/dummy.pdf'
                   target='_blank'
-                  className='flex items-center justify-center p-6 py-2 mr-4 text-lg font-medium text-light bg-dark rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
+                  className='flex items-center justify-center p-2 lg:p-6 px-4 lg:py-2 lg:mr-4 text-base lg:text-lg font-medium text-light bg-dark rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
                   download={true}
                 >
                   Resume
@@ -45,7 +47,7 @@ export default function Home() {
                 <Link
                   href='mailto:alphasearchseo@gmail.com'
                   target='_blank'
-                  className='ml-4 text-lg font-medium text-dark underline dark:text-light'
+                  className='ml-4 text-base lg:text-lg font-medium text-dark underline dark:text-light'
                 >
                   Contact
                 </Link>
@@ -55,7 +57,7 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className='absolute right-8 bottom-8 flex justify-between space-x-32'>
+        <div className='flex absolute right-8 bottom-8 justify-between space-x-32 invisible md:visible'>
           <EthLogo className='!w-24' />
           <PolygonIcon className='!w-24' />
           <OptimismLogo className='!w-24' />
@@ -65,5 +67,3 @@ export default function Home() {
     </>
   )
 }
-
-// absolute right-8 bottom-8 inline-block w-24
