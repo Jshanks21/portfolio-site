@@ -9,7 +9,7 @@ const ListItemIcon = ({ reference }: { reference: React.MutableRefObject<null> }
 
   return (
     <figure className='absolute left-0 stroke-dark dark:stroke-light'>
-      <svg className='-rotate-90' width={75} height={75} viewBox="0 0 100 100">
+      <svg className='-rotate-90 sm:w-[63px] sm:h-[63px] md:w-[75px] md:h-[75px] ' width={43} height={43} viewBox="0 0 100 100">
         <circle cx={75} cy={50} r={20} className='stroke-primary dark:stroke-primaryDark stroke-1 fill-none' />
         <motion.circle cx={75} cy={50} r={20} className='stroke-[5px] fill-light dark:fill-dark'
           style={{

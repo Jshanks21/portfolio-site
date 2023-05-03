@@ -11,6 +11,7 @@ import image4 from '@/public/images/blog/cov-1.png';
 import image5 from '@/public/images/blog/web3-dev.png';
 import image6 from '@/public/images/blog/merge.png';
 import { motion, useMotionValue } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
 
 type PostProps = {
   img: any;
@@ -57,7 +58,7 @@ const MovingImage = ({ title, img, link }: PostProps) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className='z-10 w-96 h-auto hidden absolute rounded-lg'
+        className='z-10 w-96 h-auto max-lg:!hidden hidden absolute rounded-lg'
       />
     </Link>
   )
@@ -66,9 +67,11 @@ const MovingImage = ({ title, img, link }: PostProps) => {
 const FeaturedPost = ({ img, title, time, summary, link }: PostProps) => {
   return (
     <li className='col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative flex flex-col justify-between dark:bg-dark dark:border-light'>
+      
       <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light' />
+
       <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
-        <h2 className='my-2 capitalize text-2xl font-bold underline pb-4'>{title}</h2>
+        <h2 className='my-2 capitalize text-lg sm:text-2xl font-bold pb-4'>{title}</h2>
       </Link>
 
       <Link href={link} target='_blank' className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'>
@@ -95,10 +98,10 @@ const Post = ({ img, title, date, link }: PostProps) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{once: true}}
-      className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light'
+      className='relative w-full p-4 py-6 my-4 rounded-xl flex flex-col sm:flex-row items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light'
     >
       <MovingImage title={title} img={img} link={link} />
-      <span className='text-primary font-semibold pl-4 dark:text-primaryDark'>{date}</span>
+      <span className='text-primary font-semibold dark:text-primaryDark self-start sm:pl-4 text-sm sm:text-xl'>{date}</span>
     </motion.li>
   )
 }
@@ -110,10 +113,11 @@ const blog = () => {
         <title>Alpha Innovations | Blog</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
+      <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
-        <Layout className='pt-16'>
-          <AnimatedText text='Words Can Change The World!' className='mb-16' />
-          <ul className='grid grid-cols-2 gap-16'>
+        <Layout className='pt-0 pb-0 lg:pt-16'>
+          <AnimatedText text='Words Can Change The World!' className='mb-8 md:mb-16 text-3xl sm:text-4xl md:text-6xl lg:text-7xl' />
+          <ul className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 gap-y-16'>
             <FeaturedPost
               img={image3}
               title='Announcing Mintgate V4'

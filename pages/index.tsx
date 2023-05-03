@@ -7,6 +7,7 @@ import { LinkArrow, PolygonIcon, EthLogo, OptimismLogo } from '@/components/Icon
 import HireMe from '@/components/HireMe'
 import arbLogo from '@/public/images/chains/arbitrum-logo.png'
 import Head from 'next/head'
+import TransitionEffect from '@/components/TransitionEffect'
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
         <title>Alpha Innovations | Home</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
+      <TransitionEffect />
       <main className='flex items-center w-full text-dark min-h-screen dark:text-light'>
 
-        <Layout className='pt-8 xl:pt-0'>
+        <Layout className='pt-8 lg:pt-0'>
           <div className='flex items-center justify-between w-full flex-col lg:flex-row'>
 
             <div className='w-full lg:w-1/2 xl:mr-16'>
