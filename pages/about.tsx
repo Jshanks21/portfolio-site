@@ -41,7 +41,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Alpha Innovations | About</title>
+        <title>Luis Egea | About</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
       <TransitionEffect />

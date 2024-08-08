@@ -110,7 +110,7 @@ const blog = () => {
   return (
     <>
       <Head>
-        <title>Alpha Innovations | Blog</title>
+        <title>Luis Egea | Blog</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
       <TransitionEffect />

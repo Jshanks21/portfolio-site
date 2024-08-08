@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Alpha Innovations | Home</title>
+        <title>Luis Egea | Home</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
       <TransitionEffect />

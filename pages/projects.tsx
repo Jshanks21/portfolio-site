@@ -99,7 +99,7 @@ const projects = () => {
   return (
     <>
       <Head >
-        <title>Alpha Innovations | Projects</title>
+        <title>Luis Egea | Projects</title>
         <meta name="description" content="Alpha Innovations is a software development company that provides software development services to clients." />
       </Head>
       <TransitionEffect />

@@ -18,9 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Next.js + Tailwind CSS</title>
+        <title>LFG!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Next.js + Tailwind CSS" />
+        <meta name="description" content="Luis Egea Personal Website | Next.js + Tailwind CSS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen text-xl`}>
