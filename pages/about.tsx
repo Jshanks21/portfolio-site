@@ -55,16 +55,16 @@ const about = () => {
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
 
               <p className='sm:font-medium'>
-                Hi there and welcome to Alpha Innovations. My name is Luis, a web3 developer and UI/UX designer with a passion for creating beautiful, functional,
+                Hey there! My name is Luis, a web3 developer and UI/UX designer with a passion for creating beautiful, functional,
                 and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                new and innovative ways to bring my clients' visions to life.
+                new and innovative ways to bring my clients&apos; visions to life.
               </p>
               <p className='my-8 sm:font-medium'>
-                I believe that design is about more than just making things look pretty – it's about solving problems and
+                I believe that design is about more than just making things look pretty – it&apos;s about solving problems and
                 creating intuitive, enjoyable experiences for users.
               </p>
               <p className='sm:font-medium'>
-                Whether I'm working on a website, mobile app, or
+                Whether I&apos;m working on a website, mobile app, or
                 other digital product, I bring my commitment to design excellence and user-centered thinking to
                 every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
               </p>
@@ -72,9 +72,9 @@ const about = () => {
             </div>
 
             <div className='xl:col-span-3 lg:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light order-1 xl:order-2'>
-              
+
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
-              
+
               <Image
                 src={profilePic}
                 alt='Alpha Innovations - Luis'
