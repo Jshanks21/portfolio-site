@@ -5,6 +5,21 @@ type IconProps = {
   rest?: any;
 };
 
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'set': SetElementProps;
+    }
+  }
+
+  interface SetElementProps extends React.HTMLAttributes<HTMLElement> {
+    attributeName: string;
+    begin: string;
+    to: string;
+  }
+}
+
 export const GithubIcon = ({ className, ...props }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
