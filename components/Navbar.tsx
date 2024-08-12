@@ -64,7 +64,7 @@ const Navbar = () => {
 
           <nav className='flex items-center mt-2'>
             <motion.a
-              href='https://twitter.com/LuisEgeaWin'
+              href='https://x.com/jshanks_'
               target='_blank'
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.9 }}
@@ -91,7 +91,7 @@ const Navbar = () => {
               <LinkedInIcon />
             </motion.a>
             <motion.a
-              href='https://medium.com/@jshanks21'
+              href='https://medium.com/@jshanks_'
               target='_blank'
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.9 }}
@@ -124,7 +124,7 @@ const Navbar = () => {
 
         <nav className='flex items-center'>
           <motion.a
-            href='https://twitter.com/LuisEgeaWin'
+            href='https://x.com/jshanks_'
             target='_blank'
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}
@@ -151,7 +151,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href='https://medium.com/@jshanks21'
+            href='https://medium.com/@jshanks_'
             target='_blank'
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}

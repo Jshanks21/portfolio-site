@@ -38,7 +38,7 @@ export default function Home() {
               </p>
               <div className='flex items-center mt-2 self-center lg:self-start'>
                 <Link
-                  href='/dummy.pdf'
+                  href='/resume.pdf'
                   target='_blank'
                   className='flex items-center justify-center p-2 lg:p-6 px-4 lg:py-2 lg:mr-4 text-base lg:text-lg font-medium text-light bg-dark rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
                   download={true}
@@ -47,7 +47,7 @@ export default function Home() {
                   <LinkArrow className='w-5 ml-1' />
                 </Link>
                 <Link
-                  href='mailto:alphasearchseo@gmail.com'
+                  href='mailto:luis@alphasearch.tech'
                   target='_blank'
                   className='ml-4 text-base lg:text-lg font-medium text-dark underline dark:text-light'
                 >
