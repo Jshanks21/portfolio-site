@@ -88,7 +88,7 @@ const about = () => {
 
               <div className='flex flex-col items-center justify-center'>
                 <span className='inline-block font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={5} />+
                 </span>
                 <h2 className='font-medium capitalize text-dark/75 dark:text-light/75 text-sm sm:text-base md:text-lg lg:text-xl text-center mr-2'>
                   satisfied clients
@@ -97,7 +97,7 @@ const about = () => {
 
               <div className='flex flex-col items-center justify-center'>
                 <span className='inline-block font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={7} />+
                 </span>
                 <h2 className='font-medium capitalize text-dark/75 dark:text-light/75 text-sm sm:text-base md:text-lg lg:text-xl text-center mr-2'>
                   projects completed
@@ -106,7 +106,7 @@ const about = () => {
 
               <div className='flex flex-col items-center justify-center'>
                 <span className='inline-block font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-                  <AnimatedNumbers value={3} />+
+                  <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className='font-medium capitalize text-dark/75 dark:text-light/75 text-sm sm:text-base md:text-lg lg:text-xl text-center'>
                   years of epic experience

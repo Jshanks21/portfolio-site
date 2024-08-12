@@ -13,13 +13,13 @@ const Details = ({ type, time, place, info }: DetailsProps) => {
   const ref = useRef(null);
 
   return (
-    <li ref={ref} className='my-8 first:mt-0 last:mt-0 w-[80%] lg:w-[60%] mx-auto flex flex-col items-center justify-between'>
-      
+    <li ref={ref} className='my-8 first:mt-0 last:mt-0 w-[80%] lg:w-[60%] mx-auto flex flex-col items-start justify-between'>
+
       <ListItemIcon reference={ref} />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, type: 'spring', stiffness: 100}}
+        transition={{ duration: 1.5, type: 'spring', stiffness: 100 }}
       >
         <h3 className='capitalize font-bold text-lg sm:text-xl md:text-2xl'>
           {type}
@@ -51,24 +51,24 @@ const Education = () => {
 
       <div ref={ref} className='mx-auto relative w-full lg:w-[90%] xl:w-[75%]'>
 
-        <motion.div 
-          style={{scaleY: scrollYProgress}} 
-          className='absolute left-[20px] sm:left-[30px] md:left-9 top-0 w-[2px] md:w-[4px] h-full bg-dark origin-top dark:bg-light' 
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          className='absolute left-[20px] sm:left-[30px] md:left-9 top-0 w-[2px] md:w-[4px] h-full bg-dark origin-top dark:bg-light'
         />
 
         <ul className='w-full flex flex-col items-start justify-between ml-2 sm:ml-4'>
           <Details
-            type='High School Diploma'
-            time='2012-2016'
-            place='Burlington High School'
-            info='Graduated with a 3.9 GPA and a 4.0 GPA in all math and science classes.'
+            type='Bachelor of English in Creative Writing'
+            time='2010-2016'
+            place='University of Kansas'
+            info='Graduated with a 3.8 GPA.'
           />
           <Details
-            type='Bachelor of Science in Computer Science'
-            time='2016-2020'
-            place='University of Vermont'
-            info='Graduated with a 3.5 GPA and a 3.8 GPA in all computer science classes.'
-          />          
+            type='High School Diploma'
+            time='2005-2009'
+            place='Saint Thomas Aquinas High School'
+            info='Graduated with a 3.9 GPA and a 4.0 GPA.'
+          />
         </ul>
       </div>
     </>
