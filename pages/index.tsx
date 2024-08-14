@@ -46,13 +46,13 @@ export default function Home() {
                   Resume
                   <LinkArrow className='w-5 ml-1' />
                 </Link>
-                <Link
+                <a
                   href='mailto:luis@alphasearch.tech'
                   target='_blank'
                   className='ml-4 text-base lg:text-lg font-medium text-dark underline dark:text-light'
                 >
                   Contact
-                </Link>
+                </a>
               </div>
             </div>
           </div>
