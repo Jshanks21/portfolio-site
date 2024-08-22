@@ -6,7 +6,8 @@ import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { GithubIcon } from '@/components/Icons';
 import project1 from '@/public/images/projects/portfolio-homepage.jpg';
-import project2 from '@/public/images/projects/crypto-screener-cover-image.jpg';
+import wip from '@/public/images/projects/wip.png';
+import wip2 from '@/public/images/projects/wip2.png';
 import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -115,7 +116,7 @@ const projects = () => {
             <div className='col-span-12'>
               <FeaturedProject
                 type='Featured Project'
-                title='React Portfolio Website'
+                title='NextJS Portfolio Website'
                 summary='A professional portfolio website using Next JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive.'
                 img={project1}
                 link='/'
@@ -125,23 +126,23 @@ const projects = () => {
             <div className='col-span-12 sm:col-span-6'>
               <Projects
                 type='Project'
-                title='Crypto Screener Application'
-                img={project2}
-                link='/'
-                github='https://github.com/Jshanks21/portfolio-site'
+                title='Crypto Portfolio Tracker'
+                img={wip}
+                link='/projects'
+                github='https://github.com/Jshanks21'
               />
             </div>
             <div className='col-span-12 sm:col-span-6'>
               <Projects
                 type='Project'
-                title='Crypto Screener Application'
-                img={project2}
-                link='/'
-                github='https://github.com/Jshanks21/portfolio-site'
+                title='Build & Share - Share Builds w/ AI'
+                img={wip2}
+                link='/projects'
+                github='https://github.com/Jshanks21'
               />
             </div>
 
-            <div className='col-span-12'>
+            {/* <div className='col-span-12'>
               <FeaturedProject
                 type='Featured Project'
                 title='React Portfolio Website'
@@ -168,7 +169,7 @@ const projects = () => {
                 link='/'
                 github='https://github.com/Jshanks21/portfolio-site'
               />
-            </div>
+            </div> */}
 
           </div>
         </Layout>

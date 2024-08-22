@@ -60,11 +60,11 @@ const Experience = () => {
 
         <ul className='w-full flex flex-col items-start justify-between ml-2 sm:ml-4'>
           <Details
-            position='Software Engineer'
-            company='Freelance'
+            position='Software Engineer & CEO'
+            company='Alpha Search'
             time='2023-Present'
             address='Remote'
-            work='Worked on a team responsible for developing new features for MintGate, a NFT marketplace. Developed a new feature that allows users to create their own NFTs using a custom template.'
+            work='I operate a small dev shop that specializes in performant crypto & blockchain applications. We focus on Ethereum and Layer 2 chains like Base, Optimism, Polygon, and Arbitrum. Our mission is to provide high quality, secure, and fast products that are easy to use.'
           />
           <Details
             position='Founder | Blockchain Developer'
@@ -72,14 +72,14 @@ const Experience = () => {
             companyLink='https://mintgate.app/'
             time='2020-2023'
             address='Remote'
-            work='Worked on a team responsible for developing new features for MintGate, a NFT marketplace. Developed a new feature that allows users to create their own NFTs using a custom template.'
+            work='Worked on a team responsible for developing new features for MintGate, a token gating platform & NFT marketplace. Developed new features that allow users to create their own NFTs to token gate their content.'
           />
           <Details
             position='Digital Marketing Specialist'
             company='Freelance'
             time='2018-2020'
             address='Las Vegas, NV'
-            work='Worked on a team responsible for developing new features for MintGate, a NFT marketplace. Developed a new feature that allows users to create their own NFTs using a custom template.'
+            work='Managed PPC campaigns and created SEO optimized content various small businesses. Worked closely with clients to develop and execute marketing campaigns.'
           />
           <Details
             position='Teacher'
@@ -87,7 +87,7 @@ const Experience = () => {
             companyLink='https://www.vipkid.com/'
             time='2018-2020'
             address='Remote'
-            work='Worked on a team responsible for developing new features for MintGate, a NFT marketplace. Developed a new feature that allows users to create their own NFTs using a custom template.'
+            work='Taught English to children in China using the VIPKid app. Recieved consistent 5 star ratings from parents for my ability to engage with their children and motivate them to learn the material.'
           />
         </ul>
       </div>
